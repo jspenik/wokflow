@@ -1,0 +1,23 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        gradlePluginPortal()
+        maven {
+            url file('C:\\Users\\sjani\\Downloads\\collibra-cli-boot-1.0.57\\bin\\..\\offline-repository')
+        }
+    }
+    dependencies {
+        classpath 'com.collibra.sdk:workflows:0.0.+'
+    }
+}
+
+apply plugin: "com.collibra.sdk-workflows-basic"
+
+group = 'com.test.wf'
+version = '1.0.0'
+
+repositories {
+    maven {
+        url file('C:\\Users\\sjani\\Downloads\\collibra-cli-boot-1.0.57\\bin\\..\\offline-repository')
+    }
+}
